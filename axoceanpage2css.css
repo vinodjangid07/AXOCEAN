@@ -1,0 +1,792 @@
+*{
+
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background: transparent;
+}
+ 
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    
+   margin-top: 100px;
+   /* background-image: url(protruding-squareswhite.svg); */
+    /* background: linear-gradient(rgba(135, 207, 235, 0.291),rgba(0, 251, 255, 0)); */
+    /* background-color: #e0d6ca; */
+    background-color: #f4f4f4;
+   /* background-size: contain; */
+  
+}
+.nav_bar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+   
+   
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0.1px gray;
+}
+
+.btn {
+    /* for Home button logo */
+    background-color: transparent;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: black;
+    /* White text */
+    padding: 12px 16px;
+    /* Some padding */
+    font-size: 2.5rem;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+.btn a {
+
+    text-decoration: none;
+    color: black;
+    -webkit-font-smoothing: antialiased; 
+    font-weight: bold;
+
+}
+
+/* nav bar home button logo code above */
+
+
+
+/* for AXOCEAN heading */
+.heading {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    align-self: center;
+}
+
+/* Dropdown Button */
+
+.fas {
+    font-size: 2.5rem;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    padding: 12px 16px;
+    border: none;
+    transition-duration: .3s;
+}
+
+.dropbtn span {
+    font-size: 2rem;
+}
+
+.rotate {
+    transform: rotate(270deg);
+
+}
+
+.dropdownlist {
+    background-color:#f4f4f4a0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   z-index: 105;
+    text-align: center;
+    animation: dropdownlist .2s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.29);
+}
+
+@keyframes dropdownlist {
+    0% {
+        width: 0;
+    } 
+}
+
+.link1 {
+    animation: dropdownlink .2s linear;
+}
+
+.link2 {
+    animation: dropdownlink .3s linear;
+}
+
+.link3 {
+    animation: dropdownlink .4s linear;
+}
+
+.link4 {
+    animation: dropdownlink .5s linear;
+}
+
+@keyframes dropdownlink {
+    0% {
+        margin-right: -300px;
+    }
+}
+.firstlinkcontainer{
+    position: relative;
+    
+
+}
+
+.dropdownlist div{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+#exitbutton{
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 3.6rem;
+    font-weight: 900;
+    transition: all .4s;
+    color: #ed7a3c;
+
+}
+#exitbutton:hover{
+    color: #ed7a3c;
+}
+
+
+.dropdownlist a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    /* background-color: #00659b; */
+    color: black;
+    font-weight: bolder;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding: 10px;
+    transition-duration: .2s;
+}
+
+
+.show {
+    display: block;
+}
+
+.dropdownlist a:hover {
+    letter-spacing: 5px;
+    color: #ed7a3c;
+}
+
+.fas:hover {
+    /* color: #0fa7c6; */
+    color: #ed7a3c;
+
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.maincontainer{
+
+   width: 100%;
+   border: 2px solid white;
+  min-height: 800px;
+/* background: linear-gradient(#8693ab,#bdd4e7); */
+/* background-image: url(protruding-squareswhite.svg); */
+background-color: white;
+background-size: contain;
+  margin-top: 80px ;
+  margin-bottom: 80px;
+  border-radius: 50px;
+  padding-bottom: 40px;
+
+}
+.designsheading{
+    color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    width: 30rem;
+    height: 7rem;
+    border-radius: 30px;
+    margin: 20px auto;
+    /* background-color: #2e30323d; */
+    /* box-shadow: 0px 8px 10px rgba(128, 128, 128, 0.334); */
+}
+.designscontainer{
+    display: flex;
+   flex-wrap:wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px;
+    gap:15px;
+    /* flex-shrink: 100px; */
+
+    
+}
+#hovereffect{
+    width: 200px;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#hovereffect span{
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: black;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.design{
+    position: relative; 
+    width:200px;
+
+   
+    height: 320px;
+    /* backdrop-filter: blur(2px); */
+    /* background-color: #2f2f2f94; */
+    background-color: white;
+   
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.072);
+    /* border-radius: 20px; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    /* border-radius: 15px; */
+  transition: .3s ;
+ 
+   
+} 
+.design:hover {
+    /* products flex hover  */
+    /* transform: translate(-2px, -10px); */
+   /* background-position:right; */
+   background-color: rgba(210, 210, 210, 0.735);
+
+}
+
+.productdescription{
+    
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    padding-top: 0;
+    justify-content: space-evenly;
+    background-color: transparent;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    /* border: 2px solid white; */
+
+
+}
+
+.design h1 {
+  /* for product heading */
+  width: 100%;
+
+  white-space: nowrap;
+  color: black;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* font-weight: bold; */
+  font-size: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+}
+
+.productimagediv
+{
+    /* for product images */
+    height: 60%;
+    width: 100%;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+}
+.productimagediv img{
+    height: 90%;
+    
+}
+
+.design h3 {
+    /* for product description */
+    width: 100%;
+    color: rgb(0, 0, 0);
+  
+    font-weight:300;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 1rem;
+}
+.prizesection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 100%;
+   
+
+}
+.oldprize{
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 100%;
+ 
+  color: #ed7a3c;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+.design-a-tag {
+    text-decoration: none;
+}
+.viewbutton{
+    width: 100%;
+}
+.design  button {
+    /* see details href button */
+   width: 60%;
+
+   height: 25px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+  
+}
+.design button:hover{
+    background-color: #ed7a3c;
+    transition-duration: .4s;
+   
+}
+
+
+
+/* footercode starts from here */
+footer {
+    background-color: rgb(8, 8, 8);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.websiteheading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0rem 0 1rem 0;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+
+
+}
+
+.description {
+    line-height: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(227, 227, 227);
+    margin: 0rem 0 1rem 0;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: italic;
+
+
+}
+
+.socialmedialogos {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+    width: 200px;
+
+
+
+
+
+}
+
+.socialmedialogos li {
+    margin: 0 10px;
+}
+
+.socialmedialogos a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialmedialogos a {
+    font-size: 4rem;
+}
+
+#instgram {
+    transition: color .2s ease;
+}
+
+#instagram:hover {
+    color: #e41da2;
+}
+
+#pinterest {
+    transition: color .2s ease;
+}
+
+#pinterest:hover {
+    color: rgb(208, 10, 10);
+}
+
+#facebook {
+    transition: color .2s ease;
+}
+
+#facebook:hover {
+    color: rgb(101, 160, 255);
+}
+
+
+
+
+.footerbottom {
+    background-color: #02040600;
+
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerbottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    /* text-transform: capitalize; */
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #c6c6c6;
+}
+
+#backtotopbutton{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: none; 
+    width: 6rem;
+    height:6rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: #535353;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585) ;
+    z-index: 101;
+    text-align: center;
+    transition: all .4s;
+    
+}
+
+#backtotopbutton:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+/* footercode ends here */
+
+
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+  
+   
+
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+   
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    .dropdownlist {
+        height: 100%;
+        width: 100%;
+    }
+    .dropdownlist div{
+        height: 10%;
+    }
+    #exitbutton{
+        top: 2px;
+        right: 2px;
+    }
+  
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    .floating-contact-form .field-container i{
+        top:18px;
+    }
+    .floating-contact-form .field-container label{
+        top:17px;
+    }
+   
+   
+    .design{
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 40%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    .design{
+        width: 180px;
+        height: 310px;
+    }
+  
+
+}
+@media screen and (max-width:410px){
+    .design
+    {
+        width: 165px;
+        
+    }
+}
+@media screen and (max-width:380px){
+    .design
+    {
+        width: 160px;
+        
+    }
+}
+@media screen and (max-width:355px){
+     .design
+    {
+        width: 140px;
+        height: 220px;
+        
+    } 
+}
+@media screen and (max-width:320px){
+    .design
+    {
+        width: 130px;
+        height: 220px;
+        
+    }
+    .designscontainer{
+        gap: 0;
+    }
+}
+@media screen and (max-width:275px){
+    .design
+    {
+        width: 110px;
+        height: 200px;
+        
+    }
+    .designscontainer{
+        gap: 0;
+    }
+}
+@media  (min-height:1800px) {
+    @media(min-width:500px){
+
+  
+    body{
+        
+        height: fit-content;
+       
+    }
+    .maincontainer{
+        height: 2000px;
+       
+    }
+    .design {
+        margin:60px;
+    }
+    .sliderdiv{ margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .landingpagecontainer{
+        height: 2500px;
+        background-color: white;
+    }
+    .thisisaxocean{
+        height: 2050px;
+    }
+}
+}
+/* responsive code above */

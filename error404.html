@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background: transparent;
+}
+ 
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+    width: 100%;
+
+}
+.maincontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.error404{
+    font-size: 8rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: red;
+
+}
+.error{
+    font-size: 3rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.gotohomepage{
+    font-size: 2rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.backbutton{
+    margin-top: 4rem;
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    font-size: 7rem;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 1px 1px 10px white;
+}
+.backspan{
+    font-size: 2rem;
+    margin-bottom: 26px;
+
+}
+.backbutton:hover{
+    box-shadow: 1px 1px 10px white, 1px 1px 20px white,1px 1px 30px white,1px 1px 40px white;
+}
+.backbutton-a{
+    text-decoration: none;
+}
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+
+@media screen and (max-width:380px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html {
+        font-size: 40%;
+    }
+}
+   
+
+/* responsive code above */
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+    
+        <div class="error">ERROR</div>
+        <div class="error404"><span>404</span></div>
+        <div class="gotohomepage"><span>Look Like You Are Lost. Head Back To Homepage</span></div>
+        <a href="index.html" class="backbutton-a"><button class="backbutton">&#8592;<span class="backspan">Back</span></button></a>
+    </div>
+</body>
+</html>

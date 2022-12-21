@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a1a783">
+  <title>DESIGNS</title>
+  <!-- stylesheet --> 
+  <link rel="stylesheet" href="axoceanpage2css.css">
+  <!-- googlefont -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+</head>
+<header>
+  <div id="navbar" class="nav_bar">
+    <!-- Home button -->
+    <button class="btn"><a class="fa fa-home" href="index.html"></a></button>
+
+    <!-- heading  -->
+    <div class="heading">AXOCEAN</div>
+    <!-- transparent button in navbar grid -->
+   <!-- dropdown list code below -->
+   <div class="dropdown">
+    <button class="dropbtn">
+      <!-- <span id="hamburgerline1" class="span1">|</span>
+    <span id="hamburgerline2">|</span>
+    <span id="hamburgerline3" class="span3">|</span> -->
+      <i class="fas fa-bars" id="hamburger" onmouseover="hamburgerMouseOver()" onmouseout="hamburgerMouseOut()"  onclick="myFunction()" id="rotatebtn"></i>
+    </button>
+
+  </div>
+
+  <!-- dropdown list code above -->
+
+
+  </div>
+</header>
+
+<body>
+<!-- dropdown list code here -->
+
+<div class="dropdownlist" id="ddlist">
+  <div class="firstlinkcontainer">
+  <a href="" id="dropdownlistlink1" class="dropdownlink link1" onmouseover="hoverIn()"
+    onmouseout="hoverOut()">PRODUCTS</a></div>
+    <div>
+  <a href="" id="dropdownlistlink2" class="dropdownlink link2" onmouseover="hoverIn2()"
+    onmouseout="hoverOut2()">SPECIAL</a></div>
+    <div>
+  <a href="" id="dropdownlistlink3" class="dropdownlink link3" onmouseover="hoverIn3()"
+    onmouseout="hoverOut3()">ABOUT</a></div>
+    <div>
+  <a href="" id="dropdownlistlink4" class="dropdownlink link4" onmouseover="hoverIn4()" onmouseout="hoverOut4()">GO TO
+    FLIPKART</a></div>
+    <button id="exitbutton" onclick="hidedropdownFunction()" onmouseover="exitbuttonAddcolor()" onmouseout="exitbuttonRemovecolor()">&#10005;</button>
+</div>
+
+<!-- dropdown list code ends here -->
+  <div class="maincontainer">
+    <h1 class="designsheading">DESIGNS</h1>
+    <div class="designscontainer">
+
+      <a class="design-a-tag" href="Disney-Baby-Pink-Bow-Clips.html">
+
+      <div class=" design design1">
+
+        <div class="productimagediv">
+        <img src="EDITED-IMG-20221113-WA0005.jpg" alt="">
+      </div><!-- productimagediv -->
+        <div class="productdescription">
+        <h1>Disney Baby Pink Bow Clips</h1>
+        <h3>Starting from..</h3>
+        <div class="prizesection"><span class="oldprize">&#8377;159</span>
+        
+        </div>
+        <div class="viewbutton"><button>VIEW</button></div>
+      </div> <!-- productdesciption -->
+    </div><!-- design design1 -->
+  </a><!-- design-a-tag -->
+
+       <a class="design-a-tag" href="Disney-Baby-Pink-Bow-Clips.html"> 
+      <div class=" design design2">
+        <div class="productimagediv">
+        <img src="EDITED-IMG-20221113-WA0013.jpg" alt="">
+      </div><!-- productimagediv -->
+        <div class="productdescription">
+          <h1>Cotton Bow Hair Clips For Women</h1>
+          <h3>Starting From..</h3>  <div class="prizesection"><span class="oldprize">&#8377;159</span>
+                </div> <div class="viewbutton"><button>VIEW</button> </div>
+        </div><!-- productdesciption -->
+      </div><!-- design design2 -->
+      </a><!-- design-a-tag -->
+  
+
+    </div> <!-- designscontainer -->
+</div>  <!--  maincontainer -->
+  <footer>
+    <div class="footercontainer">
+      <h3 class="websiteheading">AXOCEAN</h3>
+      <p class="description">'Hair Accessories Takes It To The Next Level.'</p>
+      <ul class="socialmedialogos">
+
+        <li><a class="fab fa-instagram" id="instagram" href="#"></a></li>
+        <li><a class="fab fa-pinterest-p" id="pinterest" href="#"></a></li>
+        <li><a class="fab fa-facebook-f" id="facebook" href="#"></a></li>
+
+      </ul>
+    </div>
+    <div class="footerbottom">
+      <p> &copy; 2022 <span>AXOCEAN</span> All rights reserved</p>
+      <br><p>Hand Crafted in Jaipur, Rajasthan</p>
+      
+    </div>
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">&#8593;</button>
+    
+  </footer>
+  <script>
+    let mybutton = document.getElementById("backtotopbutton");
+
+ 
+    window.onscroll = function(){
+      scrollFunction()
+    };
+
+
+    function scrollFunction(){
+      if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)
+      {
+        mybutton.style.display = "block";
+      }
+       else{
+          mybutton.style.display = "none";
+         
+          }
+    }
+   
+
+    function scrolltoTopfunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+
+    let mouseHover = document.getElementById("hovereffect");
+
+    function hovereffectFunction(e){
+      mouseHover.style.opacity = "1"
+    }
+    function hovereffectremoveFunction(e){
+      mouseHover.style.opacity = "0"
+    }
+    
+    //dropdownlist toggle 
+function myFunction() {
+  document.getElementById("ddlist").classList.toggle("show")
+  // document.getElementById("rotatebtn").classList.toggle("rotate")
+}
+function hidedropdownFunction(){
+  document.getElementById("ddlist").classList.remove("show")
+}
+    
+  </script>
+</body>
+
+</html>

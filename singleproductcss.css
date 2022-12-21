@@ -1,0 +1,995 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background: transparent;
+}
+ 
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body{
+    background-color: #f4f4f4;
+    width: 100%;
+   
+   
+}
+.nav_bar {
+    /* background-color: #fff; */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0.1px gray;
+}
+.nav_bar2 {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+   
+}
+.btn {
+    /* for Home button logo */
+    background-color: transparent;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: black;
+    /* White text */
+    padding: 12px 16px;
+    /* Some padding */
+    font-size: 2.5rem;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+
+/* nav bar home button logo code above */
+
+
+
+/* for AXOCEAN heading */
+.heading {
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    align-self: center;
+
+}
+
+.fas {
+    font-size: 2.5rem;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    padding: 12px 16px;
+    border: none;
+    transition-duration: .3s;
+}
+
+.dropbtn span {
+    font-size: 2rem;
+}
+
+.rotate {
+    transform: rotate(270deg);
+
+}
+
+.dropdownlist {
+    background-color:#f4f4f4a0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   z-index: 105;
+    text-align: center;
+    animation: dropdownlist .2s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.29);
+    overflow-y: hidden;
+}
+
+@keyframes dropdownlist {
+    0% {
+        width: 0;
+    } 
+}
+
+.link1 {
+    animation: dropdownlink .2s linear;
+}
+
+.link2 {
+    animation: dropdownlink .3s linear;
+}
+
+.link3 {
+    animation: dropdownlink .4s linear;
+}
+
+.link4 {
+    animation: dropdownlink .5s linear;
+}
+
+@keyframes dropdownlink {
+    0% {
+        margin-right: -300px;
+    }
+}
+.firstlinkcontainer{
+    position: relative;
+    
+
+}
+
+.dropdownlist div{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+#exitbutton{
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 3.6rem;
+    font-weight: 900;
+    transition: all .4s;
+    color: #ed7a3c;
+
+}
+#exitbutton:hover{
+    color: #ed7a3c;
+}
+
+
+.dropdownlist a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    /* background-color: #00659b; */
+    color: black;
+    font-weight: bolder;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding: 10px;
+    transition-duration: .2s;
+}
+
+
+.show {
+    display: block;
+}
+
+.dropdownlist a:hover {
+    letter-spacing: 5px;
+}
+
+.productdetailscontainer{
+    background-color: white;
+   
+    /* padding-bottom: 20px; */
+    height: fit-content;
+    width: 100%;
+
+}
+
+.productdetailsheading{
+    
+    background-color:transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.productdetailsheading span{
+    
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 3px;
+}
+
+.main-product-container{
+
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-left:5px;
+    padding-right:5px;
+    /* overflow: hidden; */
+
+}
+
+
+.productimageandtitlecontainer{
+   
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    /* background-color: red; */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.281);
+    
+
+}
+
+
+.imageslidermaincontainer{
+   width: 100%;
+   background-color: #f4f4f4;
+   position: relative;
+   
+}
+
+/* .colorchangingcontainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.colorchangingcontainer img{
+ height: 80%;
+ border-radius: 50%;
+} */
+.descriptionmaincontainer{
+    padding: 25px;
+    width: 50%;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.281);
+}
+.title{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.newprize{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ed7a3c;
+    
+}
+.oldprize{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #535353;
+}
+.tax-included{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.para{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #535353;
+}
+.button{
+    border: none;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color:#ed7a3c;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all .3s;
+    letter-spacing: 3px;
+
+}
+.button:hover{
+    background-color: rgb(33, 33, 33);
+    letter-spacing: 5px;
+    transition: all .4s;
+}
+
+.carousel-indicators{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+   background-color: #f4f4f4;
+    backdrop-filter: blur(5px);
+    height:100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+border-bottom: 2px solid rgb(255, 253, 253);
+border-top: 2px solid rgb(255, 253, 253);
+
+}
+
+.carousel-indicators .active{
+ transform:scale(1.1);
+
+
+}
+.carousel-control-next span{
+    /* position: relative;
+    top:-40px; */
+    color: black;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+   
+}
+.carousel-control-prev span{
+    color: black;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.carousel-control-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    text-align: center;
+    height: 85%;
+}
+.carousel-control-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+    height: 85%;
+}
+.moredescriptioncontainer{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.moredescriptioncontainer button{
+    width: 30%;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    background-color: #ed7a3c;
+    border: none;
+    text-align: center;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+.long-description{
+    width: 100%;
+    height: fit-content;
+   border-top: 1px solid rgb(199, 199, 199);
+    display: flex;
+
+}
+.long-description-span{
+    width: 50%;
+    
+    word-wrap: break-word;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #535353;
+}
+.related-products-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.related-product-heading{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  
+}
+.related-product-heading span{
+    font-size: 2rem;
+    font-weight:700;
+    letter-spacing: 3px;
+}
+.related-products-slider{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 10px;
+    -ms-overflow-style:0;
+    scrollbar-width: 0;
+}
+.related-products-slider::-webkit-scrollbar{
+    width: 0;
+}
+
+.design{
+    position: relative;
+        width: 200px;
+        height: 320px;
+        /* backdrop-filter: blur(2px); */
+        /* background-color: #2f2f2f94; */
+        background-color: white;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.072);
+        /* border-radius: 20px; */
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        /* border-radius: 15px; */
+      transition: .3s ;
+     
+       
+    } 
+    .design:hover {
+        /* products flex hover  */
+        /* transform: translate(-2px, -10px); */
+       /* background-position:right; */
+       background-color: rgba(210, 210, 210, 0.735);
+    
+    }
+    
+    .productdescription{
+        
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        padding-top: 0;
+        justify-content: space-evenly;
+        background-color: transparent;
+        /* border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px; */
+        /* border: 2px solid white; */
+    
+    
+    }
+    
+    .design h1 {
+      /* for product heading */
+      width: 100%;
+    
+      white-space: nowrap;
+      color: black;
+      font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      /* font-weight: bold; */
+      font-size: 1.6rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    
+    
+    }
+    
+    .productimagediv
+    {
+        /* for product images */
+        height: 60%;
+        width: 100%;
+        display: flex;
+     
+        align-items: center;
+        justify-content: center;
+    }
+    .productimagediv img{
+        height: 90%;
+        
+    }
+    
+    .design h3 {
+        /* for product description */
+        width: 100%;
+        color: rgb(0, 0, 0);
+      
+        font-weight:300;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    
+        font-size: 1rem;
+    }
+    .prizesection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    
+        width: 100%;
+       
+    
+    }
+    .prize{
+        font-size: 1.8rem;
+        font-weight: 700;
+        width: 100%;
+     text-decoration: none;
+      color: #ed7a3c;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    
+    }
+    .design-a-tag {
+        text-decoration: none;
+    }
+    .viewbutton{
+        width: 100%;
+    }
+    .design  button {
+        /* see details href button */
+       width: 60%;
+    
+       height: 25px;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: none;
+        font-size: 1rem;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight: bold;
+      
+    }
+    .design button:hover{
+        background-color: #ed7a3c;
+        transition-duration: .4s;
+       
+    }
+
+/* footercode starts from here */
+footer {
+    background-color: rgb(8, 8, 8);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.websiteheading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0rem 0 1rem 0;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+
+
+}
+
+.description {
+    line-height: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(227, 227, 227);
+    margin: 0rem 0 1rem 0;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: italic;
+
+
+}
+
+.socialmedialogos {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+    width: 200px;
+
+
+
+
+
+}
+
+.socialmedialogos li {
+    margin: 0 10px;
+}
+
+.socialmedialogos a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialmedialogos a {
+    font-size: 4rem;
+}
+
+#instgram {
+    transition: color .2s ease;
+}
+
+#instagram:hover {
+    color: #e41da2;
+}
+
+#pinterest {
+    transition: color .2s ease;
+}
+
+#pinterest:hover {
+    color: rgb(208, 10, 10);
+}
+
+#facebook {
+    transition: color .2s ease;
+}
+
+#facebook:hover {
+    color: rgb(101, 160, 255);
+}
+
+
+
+
+.footerbottom {
+    background-color: #02040600;
+    /* background-color: red; */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerbottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    /* text-transform: capitalize; */
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #c6c6c6;
+}
+
+#backtotopbutton{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: none; 
+    width: 6rem;
+    height:6rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: #535353;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585) ;
+    z-index: 101;
+    text-align: center;
+    transition: all .4s;
+    
+}
+
+#backtotopbutton:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+/* footercode ends here */
+
+
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
+
+
+    .heading {
+        font-size: 3rem;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    .dropdownlist {
+        height: 100%;
+        width: 100%;
+    }
+    .dropdownlist div{
+        height: 10%;
+    }
+    #exitbutton{
+        top: 2px;
+        right: 2px;
+    }
+     body{
+        width: 100%;
+    }
+    .productdetailscontainer{
+        width: 100%;
+    }
+    .main-product-container{
+        width: 100%;
+        flex-direction: column;
+        height: fit-content; 
+        
+    }
+    .productimageandtitlecontainer{
+        width: 100%;
+        height: 70%;
+        
+    }
+    .imageslidermaincontainer{
+        width: 100%;
+    }
+    .descriptionmaincontainer{
+        width: 100%;
+        height: 30%;
+         
+    } 
+    .title{
+        margin-top: 20px;
+    }
+    .newprize{
+        margin-top: 20px;
+    }
+    .para{
+        margin-top: 20px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .moredescriptioncontainer button{
+    width: 60%;
+    }
+    .long-description-span{
+        width: 100%;
+    } 
+
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+    }
+    .nav_bar2 {
+        width: 100%;
+        height: 80px;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .nav_bar2 {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+    
+   
+   
+    
+}
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 40%;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 60px;
+    }
+    .nav_bar2 {
+        width: 100%;
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+   
+  
+
+}
+@media screen and (max-width:380px){
+    
+}
+@media screen and (max-width:355px){
+   
+}
+@media screen and (max-width:348px){
+    .carousel-indicators{
+        width: 100%;
+        gap: 2px;
+        
+    }
+}
+@media  (min-height:1800px) {
+    @media(min-width:500px){
+
+  
+    body{
+        
+        height: fit-content;
+       
+    }
+   
+    
+}
+}
+/* responsive code above */
