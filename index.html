@@ -22,87 +22,74 @@
 
 
 <body>
-
-
-  <!-- <body style="background-image: url(whitewall2-min.jpg);"> -->
+  <div class="preloader" id="preloader"><div class="spinner center">
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+</div></div>
   <!-- header -->
   <header>
-   
- 
     <!-- <div id="preloader"></div> -->
-    <div class="nav_bar" id="navbar">
+    <nav class="nav_bar" id="navbar">
 
       <!-- Home button -->
-      <button class="btn"><a id="homebtn" class="fa fa-home" href="index.html"></a></button>
+      <button class="btn"><a id="homebtn" href="index.html"><i class="fa fa-home"></i></a></button>
 
       <!-- heading  -->
       <div class="heading" id="heading" onclick="topFunction()">AXOCEAN</div>
-      <!-- transparent button in navbar grid -->
-      <!-- dropdown list code below -->
-      <div class="dropdown">
-        <button class="dropbtn">
-          <!-- <span id="hamburgerline1" class="span1">|</span>
-        <span id="hamburgerline2">|</span>
-        <span id="hamburgerline3" class="span3">|</span> -->
-          <i class="fas fa-bars" id="hamburger" onmouseover="hamburgerMouseOver()" onmouseout="hamburgerMouseOut()"  onclick="myFunction()" id="rotatebtn"></i>
-        </button>
-
-      </div>
-
-      <!-- dropdown list code above -->
-
-
-    </div>
-    
+      <div class="third-div-nav"></div>
+    </nav>
+     
 
   </header>
-  <!-- navbar 2 -->
-<!-- <div id="navbar2" class="nav_bar2"></div> -->
-  <!-- header ends -->
-  <!-- dropdown list code here -->
-
-  <div class="dropdownlist" id="ddlist">
-    <div class="firstlinkcontainer">
-    <a href="error404.html" id="dropdownlistlink1" class="dropdownlink link1" onmouseover="hoverIn()"
-      onmouseout="hoverOut()">PRODUCTS</a></div>
-      <div>
-    <a href="error404.html" id="dropdownlistlink2" class="dropdownlink link2" onmouseover="hoverIn2()"
-      onmouseout="hoverOut2()">SPECIAL</a></div>
-      <div>
-    <a href="error404.html" id="dropdownlistlink3" class="dropdownlink link3" onmouseover="hoverIn3()"
-      onmouseout="hoverOut3()">ABOUT</a></div>
-      <div>
-    <a href="error404.html" id="dropdownlistlink4" class="dropdownlink link4" onmouseover="hoverIn4()" onmouseout="hoverOut4()">GO TO
-      FLIPKART</a></div>
-      <button id="exitbutton" onclick="hidedropdownFunction()" onmouseover="exitbuttonAddcolor()" onmouseout="exitbuttonRemovecolor()">&#10005;</button>
-  </div>
-
-  <!-- dropdown list code ends here -->
-
   <main>
-
-    <!-- Animation slider -->
-    <!-- <div class="sliderdiv">
-      <div id="slidermaindiv" class="slider_main_div"></div>
-    </div> -->
-    <!-- Animation slider ends -->
-
-
+     <!-- hamburger -->
+     <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+      <button id="hamburger-button" onclick="hamburgerMenu()">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span></button>
+      </div>
+  </div>
+  <!-- hamburger -->
+  <div class="mobiletogglemenu" id="mobiletogglemenu">
+    <div class="emptyarea" id="emptyarea"></div>
+    <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <a href="#home">
+            <li id="home-mobile-tab" class="mobile-navbar-tabs-li home " onclick="hidemenubyli()">Founder</li></a>
+        <a href="#about">
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">About Us</li></a>
+        <a href="#skills">
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"onclick="hidemenubyli()">Team</li></a>
+        <a href="#projects">
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">Products</li></a>
+        
+    </ul>
+</div>
+<!-- mobile toggle menu ends -->
 
 <!-- landing page starts from here -->
     <!-- landing page -->
     <div class="landingpagecontainer" id="landingpage">
-      
-              <!-- this is axocean -->
-              <!-- <div class="thisisaxocean" id="thisisaxocean"> -->
-                <!-- <span id="bigheading"><span id="thisis">THIS IS</span> AXOCEAN</span> -->
-               
-                <!-- <span id="hairaccessories">HAIR ACCESSORIES LIKE SCRUNCHIES, CLIPS, BOWS AND MANY MORE... </span> -->
-                <!-- <span id="slogan">"BEHOLD THE POWER OF HAIR."</span> -->
               <div class="landingpagedetails">  
                  <span class="howmuchoff">Up to 50% off.</span>
-                 <!-- <span class="flipkartbutton">Go To Flipkart</span> -->
-                <a href="#mainbody"><button class="view_product_button">View Products</button></a>
+                <a href="#mainbody" id="view-product"><button class="view-products-button">
+                  <span>View Products</span>
+                  <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                      <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                  </svg>
+              </button></a>
               </div>
              
               <!-- </div> -->
@@ -214,13 +201,6 @@
       
 
     </div>
-    <div class="togglebuttoncontainer">
-
-
-      <input type="checkbox" id="switch" onclick="appearanceMOde()">
-      <label for="switch" id="label"></label>
-
-    </div> 
   </main>
 
   <footer id="footer">
